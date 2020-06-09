@@ -1,5 +1,6 @@
 export default {
   pages: [
+    'pages/navigate/pagea',
     'pages/index/index'
   ],
   window: {

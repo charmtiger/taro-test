@@ -1,0 +1,1 @@
+export default '内容来自 var.ts';

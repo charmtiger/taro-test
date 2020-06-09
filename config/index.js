@@ -45,6 +45,14 @@ const config = {
   h5: {
     publicPath: '/',
     staticDirectory: 'static',
+    output: {
+      filename: 'js/[name].[hash:8].js',
+      chunkFilename: 'js/[name].[chunkhash:8].js'
+    },
+    imageUrlLoaderOption: {
+      esModule: false,
+      limit: 1 // 大小限制，单位为 b
+    },
     postcss: {
       autoprefixer: {
         enable: true,
