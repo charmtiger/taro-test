@@ -47,8 +47,10 @@ export default class Index extends Component {
           </View>
         </View>
 
-        <div style={{ width: '200px', overflow: 'hidden' }}>
-          <span className='M-text-show-row-1'>测试文字溢出测试文字溢出测试文字溢出测试文字溢出测试文字溢出测试文字溢出测试文字溢出测试文字溢出</span>
+        <div id='appendDiv'>
+          <div style={{ width: '200px', overflow: 'hidden', display: 'inline-block' }}>
+            <span className='M-text-show-row-1' style={{ lineHeight: '1.5' }}>测试文字溢出测试文字溢出测试文字溢出测试文字溢出测试文字溢出测试文字溢出测试文字溢出测试文字溢出</span>
+          </div>
         </div>
       </View>
     )

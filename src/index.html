@@ -11,6 +11,17 @@
   <title></title>
   <script>
     !function(x){function w(){var v,u,t,tes,s=x.document,r=s.documentElement,a=r.getBoundingClientRect().width;if(!v&&!u){var n=!!x.navigator.appVersion.match(/AppleWebKit.*Mobile.*/);v=x.devicePixelRatio;tes=x.devicePixelRatio;v=n?v:1,u=1/v}if(a>=640){r.style.fontSize="40px"}else{if(a<=320){r.style.fontSize="20px"}else{r.style.fontSize=a/320*20+"px"}}}x.addEventListener("resize",function(){w()});w()}(window);
+    setTimeout(function(){
+      var el = document.getElementById('appendDiv');
+      var node = document.createElement("div");  
+      var child = `
+        <div style="width: 320px;overflow: hidden;">
+          <span class="M-text-show-row-1">这个文字放在html>body中的的的的的</span>
+        </div>
+      `;
+      node.innerHTML = child;
+      el.appendChild(node);
+    }, 5000);
   </script>
 </head>
 <body>
