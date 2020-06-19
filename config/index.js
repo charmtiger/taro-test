@@ -53,11 +53,14 @@ const config = {
       esModule: false,
       limit: 1 // 大小限制，单位为 b
     },
+    router: {
+      mode: 'browser' // 或者是 'hash'
+    },
     postcss: {
       autoprefixer: {
         enable: true,
         config: {
-          browsers: [
+          overrideBrowserslist: [
             'last 3 versions',
             'Android >= 4.1',
             'ios >= 8'

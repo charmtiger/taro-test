@@ -2,26 +2,20 @@
   overflow: hidden!important;
   /*! autoprefixer: off */
   text-overflow: ellipsis!important;
-  /*! autoprefixer: off */
   display: -webkit-box!important;
-  /*! autoprefixer: off */
   word-wrap: break-word!important;
-  /*! autoprefixer: off */
   white-space: normal!important;
-  /*! autoprefixer: off */
   box-orient: vertical!important;
-  /*! autoprefixer: off */
   -webkit-box-orient: vertical!important;
 }
 .M-text-show-row-1 {
   /*! autoprefixer: off */
   line-clamp: 1!important;
-  /*! autoprefixer: off */
   -webkit-line-clamp: 1!important;
 }
 .M-text-show-row-2 {
-  line-clamp: 2;
   /*! autoprefixer: off */
+  line-clamp: 2;
   -webkit-line-clamp: 2;
   overflow-wrap: break-word;
 }
