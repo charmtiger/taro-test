@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>测试文字溢出</title>
+  <style>
+    .M-text-show-row-1, .M-text-show-row-2, .M-text-show-row-3, .M-text-show-row-4, .M-text-show-row-5 {
+      overflow: hidden!important;
+      /*! autoprefixer: off */
+      text-overflow: ellipsis!important;
+      /*! autoprefixer: off */
+      display: -webkit-box!important;
+      /*! autoprefixer: off */
+      word-wrap: break-word!important;
+      /*! autoprefixer: off */
+      white-space: normal!important;
+      /*! autoprefixer: off */
+      box-orient: vertical!important;
+      /*! autoprefixer: off */
+      -webkit-box-orient: vertical!important;
+    }
+    .M-text-show-row-1 {
+      /*! autoprefixer: off */
+      line-clamp: 1!important;
+      /*! autoprefixer: off */
+      -webkit-line-clamp: 1!important;
+      font-size: 28px;
+      height: 28px;
+      line-height: 1;
+    }
+    .M-text-show-row-2 {
+      line-clamp: 2;
+      /*! autoprefixer: off */
+      -webkit-line-clamp: 2;
+      overflow-wrap: break-word;
+    }
+    .M-text-show-row-3 { line-clamp: 3; -webkit-line-clamp: 3; }
+    .M-text-show-row-4 { line-clamp: 4; -webkit-line-clamp: 4; }
+    .M-text-show-row-5 { line-clamp: 5; -webkit-line-clamp: 5; }
+  </style>
+</head>
+<body>
+  <div>
+    <div style="width: 200px;overflow: hidden;">
+      <span class="M-text-show-row-1">测试文字溢出测试文字溢出测试文字溢出测试文字溢出测试文字溢出测试文字溢出测试文字溢出测试文字溢出</span>
+    </div>
+  </div>
+  <div id='app'></div>
+</body>
+</html>

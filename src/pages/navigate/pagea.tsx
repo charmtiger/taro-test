@@ -40,13 +40,16 @@ export default class Index extends Component {
           </View>
         </View>
         <View style={{ margin: '20px', backgroundColor: '#eee', padding: '10px' }}>
-          <View>
-            测试引入多端文件
-          </View>
-          <View>
-            文件内容：{Val}
+          <View style={{ width: '300px', overflow: 'hidden' }}>
+            <Text className='M-text-show-row-1'>
+              这个文字放在Taro中的的的的的
+            </Text>
           </View>
         </View>
+
+        <div style={{ width: '200px', overflow: 'hidden' }}>
+          <span className='M-text-show-row-1'>测试文字溢出测试文字溢出测试文字溢出测试文字溢出测试文字溢出测试文字溢出测试文字溢出测试文字溢出</span>
+        </div>
       </View>
     )
   }
